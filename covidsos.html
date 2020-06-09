@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JozeBiz Limited | covid sos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">JOZEBIZ global</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+       <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <!--li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="portfolio.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                <a class="dropdown-item" href="portfolio-single.html">Portfolio Single</a>
+              </div>
+          </li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Case Studies</a></li-->
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item cta"><a href="services.html" class="nav-link"><span>Our Services</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->
+    <!-- END nav -->
+    
+    <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div id="particles-js"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <!--span class="mr-2"><a href="portfolio.html">Portfolio</a></span--> <span>Covidsos</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Covidsos App</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ftco-animate">
+            <p>
+              <img src="images/covidsos1.jpeg" alt="" class="img-fluid">
+            </p>
+            <h2 class="mb-3">Fighting Back COVID-19 by Building a P2P Mobile Tracer</h2>
+            <p>COVID-19 is spreading at an unprecedented rate all around the globe. Health care systems are experiencing a tremendous amount 
+			of pressure and health professionals work on exhausting shifts to deal with the demand. The virus does not distinguish between borders,
+			races, or religion! It is, therefore, our duty to be united and stand up against this highly contagious disease.</p>
+			
+            <p>The world has already several similar pandemics to COVID-19 however there is a notable difference this time: Mass collaboration,
+			transparency and open discussion were not available at the time! As tech professionals, It has now become possible to voluntarily
+			contribute to fighting the disease, which is exactly what this post is all about.</p>
+			
+            <h2 class="mb-3 mt-5">The Project — P2P Mobile Tracer</h2>
+            <h4>High-Level Description</h4>
+            <p>Due to its extreme infectiousness, we know for a fact that it is very difficult to contain the virus at this stage. Instead,
+			the main objective should be to control it as much as possible. Controlling it, however, involves the critical task of tracing 
+			any contact of people with confirmed cases with other people which I suspect is an extremely tedious task and involves a lot of
+			recalling and guesswork when done manually.</p>
+            
+			<p>With that in mind, what if..a mobile application is developed, which uses P2P networking on smartphones using Bluetooth Low
+			Energy technology to create a huge graph of proximity interactions from the users of the application such that it is possible 
+			to trace back based on confirmed COVID-19 cases. A more comprehensive technical description is given below.</p>
+            <p> 
+			<h4>Technical Description</h4>
+            <p>In order for that to work, it is essential that as many people as possible download the application on their devices and keep
+			Bluetooth active. When the application is downloaded it should run in the background and regularly scanning for other peers nearby.</p>
+            <img src="images/covidsos2.png" alt="" class="img-fluid">
+			
+			
+			<p>When another peer is identified within scan range, a ping message is sent to the peer and the interaction is recorded and
+			enqueued for reporting to the server..</p>
+            <p>
+			 <img src="images/covidsos3.png" alt="" class="img-fluid">
+			
+              <img src="images/image_8.jpg" alt="" class="img-fluid">
+            </p>
+            <p>On the server-side, the report handler will process the report messages and update a graph database such that a new link is created
+			if there had not been a previous interaction before, or increment a counter to indicate a stronger interaction between the two nodes.
+			As an effect, the administrators of the system, (whoever those may be, government, healthcare IT admins…) can mark nodes which
+			have been tested positive to COVID-19, and hence traceback their interactions based on the interaction graph.</p>
+			<img src="images/covidsos4.jpeg" alt="" class="img-fluid">
+
+            <p>From the illustration below it is apparent, the AppID7 had a strong interaction with the infected person and therefore poses a high 
+			risk of infection. Consequently, by receiving the notification, the user of AppID7 can call the corresponding health service
+			and provide his app nonce details to verify his identity and enlist for a COVID-19 test.</p>
+			
+			 <h4>Privacy Preservation</h4>
+            <p>It is essential that the user’s ID is not disclosed by the proximity interaction broadcasting. Yet, users must be able to verify 
+			their identity when notified that they have been in contact with a confirmed case so that they can sign up for COVID-19 examinations,
+			while at the same time it becomes impossible to report a spoofed notification. i.e. A user reports that he/she has received a 
+			notification and needs to be examined asap whereas in reality he/she never received one.</p>
+            
+			
+            <p>This can be achieved by a cryptographic commitment as the App User ID. More precisely, users should be asked for their passport
+			number when the application is launched for the first time. At the same time, a sequence of random bytes must be sampled from 
+			a cryptographically secure PRNG that will act as a nonce. Then a cryptographic commitment will be generated as follows:</p>
+			
+			<h2>C = sha256(passport_number || nonce)</h2>
+			<h4><i>where || is string concatenation.</i></h4>
+            <p>Commitment <b>C</b> then becomes the App User ID that is used to pseudonymously identify the application with the server.</p>
+			
+            <p>Additionally, if further identification is needed users can be asked to physically present their passport to verify that
+			they are the legitimate holders the given passport number.</p>
+			 
+			
+			 <h2 class="mb-3 mt-5">Technology Stack</h2>
+            <p>This section outlines the possible stack of technologies that can be used to build the system.<p>
+             </p>
+			 
+			  <h4>P2P Listener and Scanner</h4>
+            <p>The P2P functionality can be implemented from scratch but given the urgency of the problem,
+			it is more preferable to use a turnkey solution. In particular, P2PKit provides an out of the box solution for mobile P2P interaction.</p>
+			 
+			 <h4>Server Side Report Handler</h4>
+            <p>The report handler should be an idempotent HTTP microservice that listens for reports and updates the graph database.
+			This can be built with any web framework but ideally, a lightweight one should be used to reduce unnecessary overhead. 
+			A good example is Flask using Python, or even better something with GoLang which is even faster.</p>
+			 
+			 <h4>Push notification handler</h4>
+            <p>Another HTTP microservice to handle push notifications delivery and responses. Again, can be built with the same technologies as above.</p>
+			 
+			 <h4>Administration Web Application</h4>
+            <p>This is the interface for the IT administrators to mark nodes as confirmed cases, perform queries, send notifications, verify identities etc. 
+			The front end can be built with any <b>javascript front end framework such as Vue, Angular or React and the backend can be built separately again
+			using a web framework such as Flask for Python or Express for Node (JavaScript)</b>. As an MVP the database’s visual editor can be used to update 
+			nodes manually.</p>
+			
+			 <h4>Proximity Graph — Data Layer</h4>
+            <p>Given that the nature of the data is inherently graph-based, using a graph database not only would make queries and data modelling more
+			intuitive, but it would also provide a significant query speed advantage. Personally, I believe that Neo4J is a well-suited candidate since 
+			it has been proven to be very reliable, fast and comes with a visual data editor out of the box.
+			</p>
+			
+            <p>Although this is not a comprehensive list, these are the main software components and their corresponding technologies.
+			Of course, DevOps, infrastructure and orchestration tools need to be employed which would facilitate a robust deployment, 
+			high scalability and transparent monitoring. Hence, this section is still open to suggestions.</p>
+		
+            <p>Below you can find a very high-level architecture of the whole system. Note that there are a couple of components
+			missing such as the databases used to store data apart from the graph data.</p>
+			 
+			 <img src="images/covidsos5.png" alt="" class="img-fluid">
+			
+			 <h4>Challenges and Limitations</h4>
+            <p>Considering that this is a day’s long idea it is nowhere near a complete and fail-proof system design. As expected there are still
+			open challenges and limitations that need to be reviewed, but this is what open collaboration and discussion are all about right? Here
+			is a list of the challenges that I am currently aware of and need to be considered:</p>
+            <ul>
+			<li><h6>A consensus of which peer must send the report to the server should such that duplicate reports are avoided.</h6></li>
+			<li><h6>Can this system handle a high volume of report requests?</h6></li>
+			<li><h6>How fast can queries run if the graph becomes extremely huge?</h6></li>
+			<li><h6>At what scale can this be deployed? National scale seems sustainable but what about internationally? Data governance becomes an issue in such a case.</h6></li>
+			 </ul>
+			 
+			 
+			 <h4>Assumptions</h4>
+            <p>In order for the system to be effective, there are some assumptions that must hold:</p>
+            <ul>
+			<li><h6>As many people as possible must have the application downloaded and keep Bluetooth enabled.</h6></li>
+			<li><h6>People must have an Android or iOS smartphone.</h6></li>
+			<li><h6>People should allow and read push notifications from the application.</h6></li>
+			</ul>
+			 <p>Since all of these depend on external factors, it should be a responsibility of the government
+			to disseminate the above information effectively and encourage people to download the application.</p>
+			
+
+			
+			 <h2 class="mb-3 mt-5">Desirable Improvements</h2>
+            <p>This project describes a system that provides the minimum possible value (albeit impactful) for the given use case. 
+			Nevertheless, there are further features that can be implemented. These are the following:</p>
+        
+			<ul>
+			<li><h6>Run even more sophisticated graph algorithms to identify high-risk clusters at more than a single level depth from a confirmed case.</h6></li>
+			<li><h6>Notify clusters with high proximity interaction with push notifications that provide suggestions to keep distances in order to minimize infection risk.</h6></li>
+			<li><h6>Use the proximity graph database to investigate and research how the disease spreads amongst populations given the magnitude of close interactions.</h6></li>
+			</ul>
+
+
+		
+			 <h2 class="mb-3 mt-5">Project Development</h2>
+            <p>With Our current time work schedule, it would be a moderate difficult task to build this system .
+			What is more, there are aspects of the system which would involve some learning that will unavoidably require time and effort. 
+				Nevertheless we are commited to achieve a workable version as soon as possible.</p>
+			
+			
+            <p><a href="#" class="btn btn-primary py-3 px-5">See Demo</a> <a href="#" class="btn btn-primary btn-outline-primary py-3 px-5">Coming Soon</a></p>
+            
+
+            <div class="pt-5 mt-5">
+              <!--h3 class="mb-5">6 Comments</h3>
+              <ul class="comment-list">
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="images/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">June 27, 2018 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+                </li>
+
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="images/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">June 27, 2018 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+
+                  <ul class="children">
+                    <li class="comment">
+                      <div class="vcard bio">
+                        <img src="images/person_1.jpg" alt="Image placeholder">
+                      </div>
+                      <div class="comment-body">
+                        <h3>John Doe</h3>
+                        <div class="meta">June 27, 2018 at 2:21pm</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                        <p><a href="#" class="reply">Reply</a></p>
+                      </div>
+
+
+                      <ul class="children">
+                        <li class="comment">
+                          <div class="vcard bio">
+                            <img src="images/person_1.jpg" alt="Image placeholder">
+                          </div>
+                          <div class="comment-body">
+                            <h3>John Doe</h3>
+                            <div class="meta">June 27, 2018 at 2:21pm</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                            <p><a href="#" class="reply">Reply</a></p>
+                          </div>
+
+                            <!--ul class="children">
+                              <li class="comment">
+                                <div class="vcard bio">
+                                  <img src="images/person_1.jpg" alt="Image placeholder">
+                                </div>
+                                <div class="comment-body">
+                                  <h3>John Doe</h3>
+                                  <div class="meta">June 27, 2018 at 2:21pm</div>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                                  <p><a href="#" class="reply">Reply</a></p>
+                                </div>
+                              </li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li-->
+
+                <!--li class="comment">
+                  <div class="vcard bio">
+                    <img src="images/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>John Doe</h3>
+                    <div class="meta">June 27, 2018 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+                </li>
+              </ul-->
+              <!-- END comment-list -->
+              
+              <div class="comment-form-wrap pt-5">
+                <!--h3 class="mb-5">Leave a comment</h3>
+                <form action="#" class="p-5 bg-light">
+                  <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="url" class="form-control" id="website">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                  </div>
+
+                </form-->
+              </div>
+            </div>
+
+          </div> <!-- .col-md-8 -->
+          <div class="col-md-4 sidebar ftco-animate">
+            <div class="sidebar-box">
+              <form action="#" class="search-form">
+                <div class="form-group">
+                  <span class="icon fa fa-search"></span>
+                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+                </div>
+              </form>
+            </div>
+            <div class="sidebar-box ftco-animate">
+              <div class="categories">
+                <h3>Categories</h3>
+                <li><a href="#">Artificial Intelligence <span>(4)</span></a></li>
+                <li><a href="#">Crypto Currency <span>(1)</span></a></li>
+                <li><a href="#">Health <span>(2)</span></a></li>
+                <li><a href="#">Design tools <span>(12)</span></a></li>
+                </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3>Recent Projects</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Covidsos- help fight Covid 19 together</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2020</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Cross River State Tax Management</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2016</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 47</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">D.C MEDICAL- Platform managing wide range of users</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> April 12, 2019</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3>Tag Cloud</h3>
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">I.T</a>
+                <a href="#" class="tag-cloud-link">A.I</a>
+                <a href="#" class="tag-cloud-link">Mobile</a>
+                <a href="#" class="tag-cloud-link">Project</a>
+                <a href="#" class="tag-cloud-link">Near Field</a>
+                <a href="#" class="tag-cloud-link">Database</a>
+                <a href="#" class="tag-cloud-link">Web</a>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3>Our Promise</h3>
+              <p>We have already acquired vast experience in the provision of these service solutions. We intend to
+				build on our previous success by identifying key areas of collaboration with government agencies to 
+				make the service they render to the public more efficient using emerging technology tools as a delivery mechanism.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+   <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">JozeBiz Global.</h2>
+              <p>We love to create softwares to ease complex processes</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-5">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Home</a></li>
+                <!--li><a href="#" class="py-2 d-block">Case studies</a></li-->
+                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <!--li><a href="#" class="py-2 d-block">Portfolio</a></li-->
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Contact Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">#8 Bishop Moynagh Avenue, State Housing Estate, Calabar, Cross River State, Nigeria</a></li>
+                <li><a href="#" class="py-2 d-block">+234 701 628 5270</a></li>
+                <li><a href="#" class="py-2 d-block">info@joebiz.work</a></li>
+                <!--li><a href="#" class="py-2 d-block">email@email.com</a></li-->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+			Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | JOZEBIZ <i class="icon-heart" aria-hidden="true"></i> <a href="https://jozebiz.work" target="_blank">Global</a>
+  </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particle.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
